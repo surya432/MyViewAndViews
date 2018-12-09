@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/verticalMargin"
+        android:paddingTop="@dimen/horizontalMargin"
+        android:paddingRight="@dimen/verticalMargin"
+        android:paddingBottom="@dimen/horizontalMargin">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:contentDescription="@string/images_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/pixel_google" />
+
+            <TextView
+                style="@style/TextContent.Small.White"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="@dimen/horizontalMargin"
+                android:layout_marginBottom="@dimen/verticalMargin"
+                android:background="#4D000000"
+                android:drawableStart="@drawable/ic_collections_white_18dp"
+                android:drawablePadding="4dp"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:text="@string/_6_photos"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@android:color/white" />
+        </FrameLayout>
+
+        <TextView
+            style="@style/TextContent.Black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/horizontalMargin"
+            android:layout_marginTop="@dimen/verticalMargin"
+            android:layout_marginRight="@dimen/horizontalMargin"
+            android:layout_marginBottom="8dp"
+            android:text="@string/_735"
+            android:textColor="@android:color/black"
+            android:textSize="32sp" />
+
+        <TextView
+            style="@style/TextContent.Subtitle"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/horizontalMargin"
+            android:layout_marginRight="@dimen/horizontalMargin"
+            android:layout_marginBottom="@dimen/verticalMargin"
+            android:text="@string/stock_hanya_5_buah"
+            android:textSize="12sp" />
+
+        <TextView
+            style="@style/TextContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/horizontalMargin"
+            android:layout_marginRight="@dimen/horizontalMargin"
+            android:layout_marginBottom="@dimen/verticalMargin"
+            android:lineSpacingMultiplier="1"
+            android:text="@string/content_text"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            style="@style/TextContent.Subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/horizontalMargin"
+            android:layout_marginRight="@dimen/horizontalMargin"
+            android:layout_marginBottom="8dp"
+            android:text="@string/spesifikasi"
+            android:textSize="12sp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/horizontalMargin"
+            android:layout_marginRight="@dimen/horizontalMargin"
+            android:layout_marginBottom="@dimen/verticalMargin">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    style="@style/TextSpec.Field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/verticalMargin"
+                    android:text="@string/display"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/content_specs_display"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    style="@style/TextSpec.Field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/verticalMargin"
+                    android:text="@string/size"
+                    android:textSize="14sp" />
+
+                <TextView
+                    style="@style/TextSpec.Value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/content_specs_size"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    style="@style/TextSpec.Field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/verticalMargin"
+                    android:text="@string/battery"
+                    android:textSize="14sp" />
+
+                <TextView
+                    style="@style/TextSpec.Value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/content_specs_battery"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            style="@style/TextContent.Subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/horizontalMargin"
+            android:layout_marginRight="@dimen/horizontalMargin"
+            android:layout_marginBottom="8dp"
+            android:text="@string/dijual_oleh"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/horizontalMargin"
+            android:layout_marginRight="@dimen/horizontalMargin"
+            android:layout_marginBottom="@dimen/verticalMargin">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/horizontalMargin"
+                android:src="@drawable/surya432" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/profile_image"
+                android:text="@string/surya_hadi_prastya"
+                android:textColor="@android:color/black" />
+        </RelativeLayout>
+
+        <Button
+            style="@style/ButtonGeneral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/horizontalMargin"
+            android:layout_marginRight="@dimen/horizontalMargin"
+            android:layout_marginBottom="@dimen/horizontalMargin"
+            android:text="@string/beli" />
+    </LinearLayout>
+
+
+</ScrollView>
